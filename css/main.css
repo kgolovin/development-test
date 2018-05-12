@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+	margin: 0 ;
+	font-family: 'Roboto', sans-serif;
+	background:#ffffff;
+	color: #000;
+
+}
+.form-block{
+	width:440px;
+	overflow: hidden;
+	margin:30px auto 0;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(102,102,102,0.77);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(102,102,102,0.77);
+	box-shadow: 0px 0px 5px 1px rgba(102,102,102,0.77);
+	padding:30px;
+}
+.form-block h3{
+	margin:15px 0 0;
+	font-weight:bold;
+	color: #000;
+	font-size:20px;
+	line-height:22px;
+	text-align: center;
+}
+.form-block .form-item{
+	margin:10px 0 0;
+	width:100%;
+	overflow: hidden;
+}
+.form-block .form-item label{
+	width:150px;
+	text-align: right;
+	padding:0 20px 0 0;
+	float: left;
+	font-size:14px;
+	line-height:21px;
+}
+.form-block .form-item input.form-text{
+	border:1px solid #ccc;
+	padding:2px 5px;
+	width:200px;
+	font-family: 'Roboto', sans-serif;
+}
+.form-block input.submit{
+	color: #fff;
+	width:100px;
+	height:30px;
+	line-height:30px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	background:#4A8BEE;
+	margin:15px auto;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	border:none;
+}
+.form-block input.submit:hover{
+	opacity:0.9;
+}
+.error{
+	color:#f00;
+	text-align: center;
+	font-size:14px;
+	line-height:16px;
+	display: block;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	display: none;
+	opacity: 1;
+}
+
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.popup .close:hover {
+	color: #4A8BEE;
+}
+@media only screen and (max-width: 500px) {
+	.form-block{
+		width:auto;
+		box-shadow: none;
+	}
+
+	.form-block .form-item input.form-text{
+		width:90%;
+
+		padding:3px 4%;
+	}
+	.form-block .form-item label {
+		display: none; }
+	.popup{
+		width:70%;
+	}
+
+}
